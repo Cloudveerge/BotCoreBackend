@@ -1,0 +1,17 @@
+{
+  "instructions": {
+    "login": {
+      "question": "how to log in",
+      "answer": "To log in to the system, use the API: {Domain}/System/API/Authorization.php?F=LOGIN. Method: POST. Fields: Email and Password. A successful response contains a session key."
+    },
+    "get_account": {
+      "question": "how to get account data",
+      "answer": "Use the API: {Domain}/System/API/Connect.php. Header: 'S-KEY': {Session key}. Method: GET. The response contains your profile data."
+    },
+    "add_post": {
+      "question": "how to submit a post",
+      "answer": "Use the API: {Domain}/System/API/AddPost.php. Method: POST. Fields: Text, File (optional), ClearMetadataIMG (true/false), CensoringIMG (true/false). Header: 'S-KEY': {Session key}."
+    }
+  },
+  "api_info": "Set the User-Agent to 'InteriumAPI'. For some scripts, use 'FormData' to send the data."
+}
